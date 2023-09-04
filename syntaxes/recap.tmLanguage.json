@@ -12,14 +12,14 @@
     {
       "name": "string.quoted",
       "match": "(?i)\"[^\"]*\"",
-      "match": "(?i)\\b(c/p|cp|charter party|pro-forma|main terms|recap|law|arbitration|arbitrage|vetting|bid|clause|cls|p&i|extra insurance|insurance|logical alterations|logically amended|logicaly amended|war risk|piracy|survey|rain letter|loi|l.o.i|letter of indemnity|letter|warrant|guarantee|gtee|acceptance|bill of lading|bills of lading|bill of lading(s)|bs/l|bill|main terms|mainterms|time charter trip|tct|time charter|subs)",
+      "match": "(?i)\\b(c/p|cp|charter party|pro-forma|main terms|recap|law|arbitration|arbitrage|vetting|bid|clause|cls|p&i|pandi|extra insurance|insurance|logical alterations|logically amended|logicaly amended|war risk|piracy|survey|rain letter|loi|l.o.i|letter of indemnity|letter|warrant|guarantee|gtee|acceptance|bill of lading|bills of lading|bill of lading(s)|bs/l|bill|main terms|mainterms|time charter trip|tct|time charter|subs)",
       "captures": {
         "0": { "name": "string.quoted" }
       }
     },
     {
       "name": "variable.parameter", 
-      "match": "(?i)\\b(delivery|dely|redelivery|redel|redly|rdly|re-delivery|redel|frt|freight|eur|euro|reversible|non-reversible|non-rev|non reversible|mol|molo|moloo|molchopt|pdpr|despatch|half despatch|molochopt|chopt|inchopt|in chopt|usd|fios|f.i.o|spout|trimmed|lilo|lifo|filo|fio|fiost|fiot|liner in|liner out|lsd|lsdw|l/s/d|stem|oap|charges|payable|payment|dollars|$|nok|pmt|pcbm|cost|costs|expense|fees|dues|expenses|premium|lumpsum|demurrage|dem|desp|pdpr/hd|dhd|taxes|dues|commission|adcom|adcomm|addcom|address commission|address comm|comission|laycan|layday|laydays|cancelling|cnacellation|reverting|duration|ilohc|cve|c/v/e|responsible|damage|damages)\\b",
+      "match": "(?i)\\b(delivery|dely|redelivery|redel|redly|rdly|re-delivery|redel|frt|freight|eur|euro|reversible|non-reversible|non-rev|non reversible|mol|molo|moloo|molchopt|pdpr|despatch|half despatch|molochopt|chopt|inchopt|in chopt|usd|fios|f.i.o|spout|trimmed|lilo|lifo|filo|fio|fiost|fiot|liner in|liner out|lsd|lsdw|l/s/d|stem|oap|charges|payable|payment|dollars|$|nok|pmt|pcbm|cost|costs|expense|fees|dues|expenses|premium|lumpsum|demurrage|dem|desp|pdpr/hd|dhd|taxes|dues|commission|adcom|adcomm|addcom|address commission|address comm|comission|laycan|layday|laydays|cancelling|cnacellation|reverting|duration|ilohc|cve|c/v/e|responsible|damage|damages|voyage)\\b",
       "captures": {
         "0": { "name": "support.parameter" }
       }
@@ -33,14 +33,14 @@
     },
     {
       "name": "storage",
-      "match": "(?i)\\b(acct|a/c|account|manager|managers|headows|headowners|disp|disponent|acc|shipper|shippers|receiver|receivers|consignee|consignees|charterers|chrtr|chtrs|charrs|charterer|chrts|chrtrs|ows|ownrs|owners|ows's|owner's|carrier|carrier's|attached)\\b",
+      "match": "(?i)\\b(acct|a/c|account|manager|managers|headows|rcvrs|bod|b.o.d|beneficiary|headowners|disp|disponent|acc|shipper|shippers|receiver|receivers|consignee|consignees|charterers|chrtr|chtrs|charrs|charterer|chrts|chrtrs|ows|ownrs|owners|ows's|owner's|carrier|carrier's|attached)\\b",
       "captures": {
         "0": { "name": "storage" }
       }
     },
     {
       "name": "entity.name.type.class",
-      "match": "(?i)\\b(attached|always|otherwise|has the right|option|have the right|limits|owners option|does not|agreed|compliant|validity|suitable|ows option|oo|not to be|to be|will be|must|has the right|reject|accept|damaged|as per|amended|to be paid|tbn|tbc|clause|subject|sub)\\b",
+      "match": "(?i)\\b(attached|always|otherwise|has the right|option|have the right|limits|owners option|does not|agreed|compliant|validity|suitable|ows option|oo|not to be|to be|will be|must|confirm|has the right|reject|accept|damaged|as per|amended|to be paid|tbn|tbc|clause|subject|sub)\\b",
       "captures": {
         "0": { "name": "entity.name.type.class" }
       }
