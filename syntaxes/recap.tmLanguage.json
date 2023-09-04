@@ -4,46 +4,57 @@
   "patterns": [
     {
       "name": "constant.numeric",
-      "match": "\\b([a-zA-Z!@#$%^&*_+={}\\[\\]:;\"'<>,.?\\/|\\\\-]+)?\\d+([a-zA-Z!@#$%^&*_+={}\\[\\]:;\"'<>,.?\\/|\\\\-]+)?\\b",
+      "match": "(?i)\\b(([a-zA-Z!@#$%^&*_+={}\\[\\]:;\"'<>,.?\\/|\\\\-]+)?\\d+([a-zA-Z!@#$%^&*_+={}\\[\\]:;\"'<>,.?\\/|\\\\-]+)?)\\b",
       "captures": {
-        "0": { "name": "constant.numeric" }
+        "0": {
+          "name": "constant.numeric"
+        }
       }
     },
     {
       "name": "string.quoted",
-      "match": "(?i)\"[^\"]*\"",
-      "match": "(?i)\\b(c/p|cp|charter party|pro-forma|main terms|recap|law|arbitration|arbitrage|vetting|bid|clause|cls|p&i|extra insurance|insurance|logical alterations|logically amended|logicaly amended|war risk|piracy|survey|rain letter|loi|l.o.i|letter of indemnity|letter|warrant|guarantee|gtee|acceptance|bill of lading|bills of lading|bill of lading(s)|bs/l|bill|main terms|mainterms|time charter trip|tct|time charter|subs)",
+      "match": "(?i)\\b(\"[^\"]*\"|acceptance|arbitrage|arbitration|bid|bill|bill of lading|bill of lading(s)|bills of lading|bs/l|c/p|charter party|clause|cls|cp|extra insurance|gtee|guarantee|insurance|l.o.i|law|letter|letter of indemnity|logical alterations|logically amended|logicaly amended|loi|main terms|mainterms|p&i|pandi|piracy|pro-forma|rain letter|recap|subs|survey|tct|time charter|time charter trip|vetting|war risk|warrant)\\b",
       "captures": {
-        "0": { "name": "string.quoted" }
+        "0": {
+          "name": "string.quoted"
+        }
       }
     },
     {
-      "name": "variable.parameter", 
-      "match": "(?i)\\b(delivery|dely|redelivery|redel|redly|rdly|re-delivery|redel|frt|freight|eur|euro|reversible|non-reversible|non-rev|non reversible|mol|molo|moloo|molchopt|pdpr|despatch|half despatch|molochopt|chopt|inchopt|in chopt|usd|fios|f.i.o|spout|trimmed|lilo|lifo|filo|fio|fiost|fiot|liner in|liner out|lsd|lsdw|l/s/d|stem|oap|charges|payable|payment|dollars|$|nok|pmt|pcbm|cost|costs|expense|fees|dues|expenses|premium|lumpsum|demurrage|dem|desp|pdpr/hd|dhd|taxes|dues|commission|adcom|adcomm|addcom|address commission|address comm|comission|laycan|layday|laydays|cancelling|cnacellation|reverting|duration|ilohc|cve|c/v/e|responsible|damage|damages)\\b",
+      "name": "variable.parameter",
       "captures": {
-        "0": { "name": "support.parameter" }
-      }
+        "0": {
+          "name": "support.parameter"
+        }
+      },
+      "match": "(?i)\\b($|adcom|adcomm|addcom|address comm|address commission|c/v/e|cancelling|charges|chopt|cnacellation|comission|commission|cost|costs|cve|damage|damages|delivery|dely|dem|demurrage|desp|despatch|dhd|dollars|dues|duration|eur|euro|expense|expenses|f.i.o|fees|filo|fio|fios|fiost|fiot|freight|frt|half despatch|ilohc|in chopt|inchopt|l/s/d|laycan|layday|laydays|lifo|lilo|liner in|liner out|lsd|lsdw|lumpsum|mol|molchopt|molo|molochopt|moloo|nok|non reversible|non-rev|non-reversible|oap|payable|payment|pcbm|pdpr|pdpr/hd|pmt|premium|rdly|re-delivery|redel|redelivery|redly|responsible|reversible|reverting|spout|stem|taxes|trimmed|usd|voyage)\\b"
     },
     {
       "name": "variable.other.readwrite",
-      "match": "(?i)\\b(bunker|vslfo|mgo|lsmgo|hfo|hsfo|vlfo|ulfo|ifo|load|discharge|disch|disport|pct|mts|eta|etc|etd|ets|afsps|dlsop|dop|aps|range|cargo|cargoes|gear|gears|crane|cranes|grab|grabs|hold|holds|hatch|hatches|hatchcovers|vessel|vessels|vsl|cbm|tons|mt|loading|discharging|port|ports|loadport|dischport|draft|lport|dport|gsb|sb|1sb|2sb|1gsb|1gsb|berth|berths|anchorage|shifting|shiftings|anchorages|aa|aaaa|naabsa|always afloat|always aflt|laytime|wwd|pwwd|days|nor|wwhrs|weather working day|weather working days|weather working hours|berth|port|sshex|sshinc|shex|fshex|fhex|atdnshinc|time|restrictions|restrics|laytime|abt|about|min|minimum|max|min/max|eiu|uu|chabe|agent|agents|BL|B/L|Bs/L|BSL|loadready|time|to count|tt|holiday|holidays|holiday calendar|bimco|not to count)\\b",
       "captures": {
-        "0": { "name": "variable.other.readwrite" }
-      }
+        "0": {
+          "name": "variable.other.readwrite"
+        }
+      },
+      "match": "(?i)\\b(1gsb|1sb|2sb|B/L|BL|BSL|Bs/L|aa|aaaa|about|abt|afsps|agent|agents|always afloat|always aflt|anchorage|anchorages|aps|atdnshinc|berth|berths|bimco|bunker|cargo|cargoes|cbm|chabe|crane|cranes|days|disch|discharge|discharging|dischport|disport|dlsop|dop|dport|draft|eiu|eta|etc|etd|ets|fhex|fshex|gear|gears|grab|grabs|gsb|hatch|hatchcovers|hatches|hfo|hold|holds|holiday|holiday calendar|holidays|hsfo|ifo|laytime|load|loading|loadport|loadready|lport|lsmgo|max|mgo|min|min/max|minimum|mt|mts|naabsa|nor|not to count|pct|port|ports|pwwd|range|restrics|restrictions|sb|shex|shifting|shiftings|sshex|sshinc|time|to count|tons|tt|ulfo|uu|vessel|vessels|vlfo|vsl|vslfo|weather working day|weather working days|weather working hours|wwd|wwhrs)\\b"
     },
     {
       "name": "storage",
-      "match": "(?i)\\b(acct|a/c|account|manager|managers|headows|headowners|disp|disponent|acc|shipper|shippers|receiver|receivers|consignee|consignees|charterers|chrtr|chtrs|charrs|charterer|chrts|chrtrs|ows|ownrs|owners|ows's|owner's|carrier|carrier's|attached)\\b",
       "captures": {
-        "0": { "name": "storage" }
-      }
+        "0": {
+          "name": "storage"
+        }
+      },
+      "match": "(?i)\\b(a/c|acc|account|acct|b.o.d|beneficiary|bod|carrier|carrier's|charrs|charterer|charterers|chrtr|chrtrs|chrts|chtrs|consignee|consignees|disp|disponent|headowners|headows|manager|managers|owner's|owners|ownrs|ows|ows's|rcvrs|receiver|receivers|shipper|shippers)\\b"
     },
     {
       "name": "entity.name.type.class",
-      "match": "(?i)\\b(attached|always|otherwise|has the right|option|have the right|limits|owners option|does not|agreed|compliant|validity|suitable|ows option|oo|not to be|to be|will be|must|has the right|reject|accept|damaged|as per|amended|to be paid|tbn|tbc|clause|subject|sub)\\b",
       "captures": {
-        "0": { "name": "entity.name.type.class" }
-      }
+        "0": {
+          "name": "entity.name.type.class"
+        }
+      },
+      "match": "(?i)\\b(accept|agreed|always|amended|as per|attached|compliant|confirm|damaged|does not|has the right|have the right|limits|must|not to be|oo|option|otherwise|owners option|ows option|reject|sub|subject|suitable|tbc|tbn|to be|to be paid|validity|will be)\\b"
     }
   ]
 }
