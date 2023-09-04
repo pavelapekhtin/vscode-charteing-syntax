@@ -32,6 +32,10 @@
       }
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pavelapekhtin/vscode-charteing-syntax"
+  },
   "devDependencies": {
     "standard-version": "^9.5.0"
   },
