@@ -8,12 +8,12 @@ This VS Code extension provides syntax highlighting for important keywords in dr
 
 ## Features
 
-* Highlights numerical values with optional prefixes and suffixes.
-* Highlights quoted strings and specific chartering terms.
-* Highlights parameters related to money, costs, and payments.
-* Highlights read/write variables related to voyage details.
-* Highlights storage-related terms like account, shipper, and receiver.
-* Highlights class types and entities related to responsibilities and options.
+* Highlights numerical values with optional prefixes and suffixes, like ``10000MT, 1SB`.
+* Highlights quoted strings and legal chartering terms and entities.
+* Highlights parameters related to money, costs, payments, laytime etc.
+* Highlights words related to voyage details.
+* Highlights counterparty related words like account, shipper, and receiver.
+* Highlights words related to responsibilities and options.
 
 
 ## Requirements
