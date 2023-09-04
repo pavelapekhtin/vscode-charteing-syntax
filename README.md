@@ -35,7 +35,3 @@ The language configuration supports line comments with // and block comments wit
 ## Contributing
 
 Feel free to open issues or pull requests if you have suggestions for improvement.
-
-## Version
-
-0.1.0
