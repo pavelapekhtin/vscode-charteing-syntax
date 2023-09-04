@@ -4,11 +4,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### 0.0.2 (2023-09-04)
 
-
 ### Features
 
 * runs locally 92f167a
 
 ## 0.0.1 - 2023-09-04
 
-- Pre-release version working
+* Pre-release version working
