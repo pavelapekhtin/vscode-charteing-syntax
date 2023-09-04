@@ -8,7 +8,7 @@ This VS Code extension provides syntax highlighting for important keywords in dr
 
 ## Features
 
-* Highlights numerical values with optional prefixes and suffixes, like ``10000MT, 1SB`.
+* Highlights numerical values with optional prefixes and suffixes, like `10000MT, 1SB`.
 * Highlights quoted strings and legal chartering terms and entities.
 * Highlights parameters related to money, costs, payments, laytime etc.
 * Highlights words related to voyage details.
@@ -40,7 +40,7 @@ This way next time you open VS Code, it will remember the folder and you can sta
 
 * Some keywords are highlighted partially.
 * VSCode complains about extra whitespaces, which should not really be a big issue for recap files since its not a programming language.
-* Clauses notation like ``1. )` tirgger the unclosed bracket to be bright red.
+* Clauses notation like `1. )` tirgger the unclosed bracket to be bright red.
 
 ## Contributing
 
