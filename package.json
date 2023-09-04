@@ -2,7 +2,7 @@
   "name": "chartering-syntax",
   "displayName": "Chartering Syntax",
   "description": "Highlighting important keywors in dry cargo fixutre recaps",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.81.0"
   },
