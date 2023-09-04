@@ -4,7 +4,7 @@
 
 This VS Code extension provides syntax highlighting for important keywords in dry cargo fixture recaps. It aims to make it easier to read and understand chartering documents by highlighting key terms, numbers, and phrases.
 
-![Screenshot](docs\screenshots\Screenshot_recap.png)
+![Screenshot](docs/screenshots/Screenshot_recap.png)
 
 ## Features
 
