@@ -18,24 +18,28 @@
     },
     {
       "name": "variable.parameter", 
+      "match": "",
       "captures": {
         "0": { "name": "support.parameter" }
       }
     },
     {
       "name": "variable.other.readwrite",
+      "match": "",
       "captures": {
         "0": { "name": "variable.other.readwrite" }
       }
     },
     {
       "name": "storage",
+      "match": "",
       "captures": {
         "0": { "name": "storage" }
       }
     },
     {
       "name": "entity.name.type.class",
+      "match": "",
       "captures": {
         "0": { "name": "entity.name.type.class" }
       }

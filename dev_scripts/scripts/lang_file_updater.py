@@ -4,6 +4,8 @@ from typing import Any
 
 import toml
 
+from scripts.cli.cli_functions import console
+
 PATH_LANG_FILE_TEMPLATE = "./data/language_file_template.json"
 PATH_TOML_FILE = "../matchCases.toml"
 PATH_LANG_FILE = "../syntaxes/recap.tmLanguage.json"
@@ -27,6 +29,7 @@ class LangFileUpdater:
     def update_language_file(self) -> None:
         with open(self.path_lang_json, "w") as f:
             json.dump(self._combine_match_cases(), f, indent=2)
+            console.print("[green]Language file updated.")
 
     def _combine_match_cases(self) -> dict[str, Any]:
         return self._pattern_matcher(

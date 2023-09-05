@@ -12,6 +12,7 @@ python = "^3.11"
 rich = "^13.5.2"
 toml = "^0.10.2"
 pytest = "^7.4.1"
+pydantic = "^2.3.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.1"
