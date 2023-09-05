@@ -1,2 +1,15 @@
 node_modules
 *.vsix
+dev_scripts/scripts/__pycache__/__init__.cpython-311.pyc
+dev_scripts/scripts/__pycache__/lang_file_updater.cpython-311.pyc
+dev_scripts/scripts/__pycache__/parse_dict.cpython-311.pyc
+dev_scripts/scripts/__pycache__/validators.cpython-311.pyc
+dev_scripts/scripts/cli/__pycache__/__init__.cpython-311.pyc
+dev_scripts/scripts/cli/__pycache__/cli_functions.cpython-311.pyc
+dev_scripts/tests/__pycache__/conftest.cpython-310-pytest-7.1.2.pyc
+dev_scripts/tests/__pycache__/conftest.cpython-311-pytest-7.2.1.pyc
+dev_scripts/tests/__pycache__/conftest.cpython-311-pytest-7.4.1.pyc
+dev_scripts/tests/unit/__pycache__/test_lang_file_updater.cpython-311-pytest-7.4.1.pyc
+dev_scripts/tests/unit/__pycache__/test_parse_dict.cpython-310-pytest-7.1.2.pyc
+dev_scripts/tests/unit/__pycache__/test_parse_dict.cpython-311-pytest-7.4.1.pyc
+dev_scripts/tests/unit/__pycache__/test_validators.cpython-311-pytest-7.4.1.pyc
