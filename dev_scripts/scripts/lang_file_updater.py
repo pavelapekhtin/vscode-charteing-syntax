@@ -2,9 +2,8 @@ import json
 from dataclasses import dataclass, field
 from typing import Any
 
-import toml
-
 from scripts.cli.cli_functions import console
+from scripts.file_loaders import load_lang_json, load_match_cases
 
 PATH_LANG_FILE_TEMPLATE = "./data/language_file_template.json"
 PATH_TOML_FILE = "../matchCases.toml"
@@ -22,9 +21,15 @@ TOML_JSON_MAPPING = {
 @dataclass
 class LangFileUpdater:
     path_kwd_toml: str = PATH_TOML_FILE
+    path_lang_json_template: str = PATH_LANG_FILE_TEMPLATE
     path_lang_json: str = PATH_LANG_FILE
-    path_json_template: str = PATH_LANG_FILE_TEMPLATE
     toml_json_mapping: dict[str, str] = field(default_factory=lambda: TOML_JSON_MAPPING)
+
+    def __post_init__(self):
+        self.kwd_toml: dict[str, Any] = load_match_cases(self.path_kwd_toml)
+        self.lang_json_template: dict[str, Any] = load_lang_json(
+            self.path_lang_json_template
+        )
 
     def update_language_file(self) -> None:
         with open(self.path_lang_json, "w") as f:
@@ -33,7 +38,7 @@ class LangFileUpdater:
 
     def _combine_match_cases(self) -> dict[str, Any]:
         return self._pattern_matcher(
-            self.kwd_toml, self.json_template, self.toml_json_mapping
+            self.kwd_toml, self.lang_json_template, self.toml_json_mapping
         )
 
     def _pattern_matcher(
@@ -50,21 +55,6 @@ class LangFileUpdater:
                 joined_match = "|".join(match_cases[toml_key]["cases"])
                 pattern["match"] = f"(?i)\\b({joined_match})\\b"
         return lang_json
-
-    @property
-    def kwd_toml(self) -> dict[str, Any]:
-        with open(self.path_kwd_toml, "r") as f:
-            return toml.load(f)
-
-    @property
-    def lang_json(self) -> dict[str, Any]:
-        with open(self.path_lang_json, "r") as f:
-            return json.load(f)
-
-    @property
-    def json_template(self) -> dict[str, Any]:
-        with open(self.path_json_template, "r") as f:
-            return json.load(f)
 
 
 if __name__ == "__main__":

@@ -3,7 +3,7 @@ from unittest.mock import mock_open, patch
 
 import toml
 
-from scripts.validators import validate_lang_json, validate_match_cases_toml
+from scripts.file_loaders import load_lang_json, load_match_cases
 
 
 def test_validate_match_cases_toml():
@@ -20,7 +20,7 @@ def test_validate_match_cases_toml():
         with patch(
             "toml.load", return_value=mock_toml_data
         ):  # Mocking toml.load to return mock_toml_data directly
-            validate_match_cases_toml("fake_path")
+            load_match_cases("fake_path")
 
 
 def test_validate_lang_json():
@@ -45,4 +45,4 @@ def test_validate_lang_json():
         with patch(
             "json.load", return_value=mock_lang_json
         ):  # Mocking json.load to return mock_lang_json directly
-            validate_lang_json("fake_path")
+            load_lang_json("fake_path")
