@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/pavelapekhtin/vscode-charteing-syntax/compare/v0.1.2...v0.1.3) (2023-09-05)
+
+
+### Features
+
+* set keywords in toml file ([49446e5](https://github.com/pavelapekhtin/vscode-charteing-syntax/commit/49446e512f0832cfc231dd641fa1d6a91f335e43))
+* set keywords in toml file ([1d91185](https://github.com/pavelapekhtin/vscode-charteing-syntax/commit/1d91185dc82e18da9c8c649374cb4fda2607205e))
+
 ### [0.1.2](https://github.com/pavelapekhtin/vscode-charteing-syntax/compare/v0.1.0...v0.1.2) (2023-09-04)
 
 
