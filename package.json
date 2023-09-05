@@ -2,7 +2,8 @@
   "name": "vscode-chartering-syntax",
   "displayName": "Chartering Syntax",
   "description": "Highlighting important keywors in dry cargo fixutre recaps",
-  "version": "0.1.2",
+  "icon": "docs/mktplace_icon.png",
+  "version": "0.1.3",
   "publisher": "pavelapekhtin",
   "engines": {
     "vscode": "^1.81.0"

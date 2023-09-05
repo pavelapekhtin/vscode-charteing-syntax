@@ -1,0 +1,44 @@
+{
+  "name": "chartering",
+  "scopeName": "source.recapSyntax",
+  "patterns": [
+    {
+      "name": "constant.numeric",
+      "match": "",
+      "captures": {
+        "0": { "name": "constant.numeric" }
+      }
+    },
+    {
+      "name": "string.quoted",
+      "match": "",
+      "captures": {
+        "0": { "name": "string.quoted" }
+      }
+    },
+    {
+      "name": "variable.parameter", 
+      "captures": {
+        "0": { "name": "support.parameter" }
+      }
+    },
+    {
+      "name": "variable.other.readwrite",
+      "captures": {
+        "0": { "name": "variable.other.readwrite" }
+      }
+    },
+    {
+      "name": "storage",
+      "captures": {
+        "0": { "name": "storage" }
+      }
+    },
+    {
+      "name": "entity.name.type.class",
+      "captures": {
+        "0": { "name": "entity.name.type.class" }
+      }
+    }
+  ]
+}
