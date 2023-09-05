@@ -1,0 +1,21 @@
+{
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
+    "python.analysis.typeCheckingMode": "strict",
+    "vim.smartRelativeLine": true,
+    "python.formatting.provider": "none",
+    "todo-tree.tree.scanMode": "workspace only",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    }
+}

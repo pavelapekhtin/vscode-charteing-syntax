@@ -1,13 +1,19 @@
 import json
 import toml
 
-def combine_match_cases():
+
+PATH_LANG_FILE_TEMPLATE = "data/language_file_template.json"
+PATH_TOML_FILE = "./match_cases.toml"
+PATH_LANG_FILE = "./syntaxes/recap.tmLanguage.json"
+
+
+def combine_match_cases(path_template: str, path_lang_json: str, path_match_cases: str) -> None:
     # Load the match cases from the TOML file
-    with open('dictionary/matchCases.toml', 'r') as f:
+    with open('data/language_file_template.json', 'r') as f:
         match_cases = toml.load(f)
 
     # Load the language file template
-    with open('scripts/language_file_template.json', 'r') as f:
+    with open('./scripts/language_file_template.json', 'r') as f:
         language_data = json.load(f)
 
     # Mapping between TOML keys and JSON names
@@ -32,4 +38,4 @@ def combine_match_cases():
         json.dump(language_data, f,indent=2)
 
 if __name__ == "__main__":
-    combine_match_cases()
+    combine_match_cases(PATH_LANG_FILE_TEMPLATE, PATH_TOML_FILE, PATH_LANG_FILE)
