@@ -1,4 +1,4 @@
-from cli.cli_functions import console
+from scripts.cli.cli_functions import console
 
 
 if __name__ == "__main__":

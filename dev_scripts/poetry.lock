@@ -64,7 +64,7 @@ colorama = {version = "*", markers = "platform_system == \"Windows\""}
 name = "colorama"
 version = "0.4.6"
 description = "Cross-platform colored terminal text."
-category = "dev"
+category = "main"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
 files = [
@@ -76,7 +76,7 @@ files = [
 name = "iniconfig"
 version = "2.0.0"
 description = "brain-dead simple config-ini parsing"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -137,7 +137,7 @@ files = [
 name = "packaging"
 version = "23.1"
 description = "Core utilities for Python packages"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -177,7 +177,7 @@ test = ["appdirs (==1.4.4)", "covdefaults (>=2.3)", "pytest (>=7.4)", "pytest-co
 name = "pluggy"
 version = "1.3.0"
 description = "plugin and hook calling mechanisms for python"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -208,7 +208,7 @@ plugins = ["importlib-metadata"]
 name = "pytest"
 version = "7.4.1"
 description = "pytest: simple powerful testing with Python"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -244,7 +244,19 @@ pygments = ">=2.13.0,<3.0.0"
 [package.extras]
 jupyter = ["ipywidgets (>=7.5.1,<9)"]
 
+[[package]]
+name = "toml"
+version = "0.10.2"
+description = "Python Library for Tom's Obvious, Minimal Language"
+category = "main"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
+files = [
+    {file = "toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"},
+    {file = "toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"},
+]
+
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "d26423c3cb0516d6c40d7227e688bc25855fafe2845e0bc396ec4f6082c8349d"
+content-hash = "b02cb5fd88df032f395ca1f3cb4c2fdcb252eee97f77da9193853ab1bb25be7a"

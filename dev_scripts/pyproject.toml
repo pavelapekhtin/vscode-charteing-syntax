@@ -1,15 +1,17 @@
 [tool.poetry]
 name = "dev-scripts"
 version = "0.1.0"
-description = "Scripts to update keywords and do housekeeping and testing of the extension"
+description = "Provides houskeeping scripts and data adding/validation/testing for the extension"
 authors = ["Your Name <you@example.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{ include = "dev_scripts", from = "src" }]
+packages = [{ include = "scripts" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 rich = "^13.5.2"
+toml = "^0.10.2"
+pytest = "^7.4.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.1"
