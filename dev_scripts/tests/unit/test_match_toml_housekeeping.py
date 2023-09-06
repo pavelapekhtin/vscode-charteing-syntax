@@ -1,12 +1,25 @@
+from typing import Any
+
 import pytest
 
+from scripts.file_loaders import load_match_cases
+from scripts.lang_file_updater import PATH_TOML_FILE
 from scripts.match_toml_housekeeping import (
+    combine_match_cases,
     find_and_report_duplicates_across_lists,
     find_and_report_duplicates_within_lists,
     find_list_duplicates,
     sort_lists,
 )
 from tests.conftest import fixture
+
+
+@pytest.mark.acceptance
+def test_combine_match_cases_e2e(capsys: Any) -> None:
+    toml_file = load_match_cases(PATH_TOML_FILE)
+    combine_match_cases(toml_file)
+    captured = capsys.readouterr()
+    assert "⚠ Duplicates!" not in captured.out
 
 
 def test_find_list_duplicates(
@@ -17,7 +30,7 @@ def test_find_list_duplicates(
 
 
 def test_find_and_report_duplicates_within_lists(
-    sample_toml_content: fixture, capsys
+    sample_toml_content: fixture, capsys: Any
 ) -> None:
     duplicates_count = find_and_report_duplicates_within_lists(sample_toml_content)
     captured = capsys.readouterr()
@@ -27,7 +40,7 @@ def test_find_and_report_duplicates_within_lists(
 
 
 def test_find_and_report_duplicates_across_lists(
-    sample_all_items: fixture, capsys
+    sample_all_items: fixture, capsys: Any
 ) -> None:
     duplicates_count = find_and_report_duplicates_across_lists(sample_all_items)
     captured = capsys.readouterr()
