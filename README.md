@@ -15,7 +15,6 @@ This VS Code extension provides syntax highlighting for important keywords in dr
 * Highlights counterparty related words like account, shipper, and receiver.
 * Highlights words related to responsibilities and options.
 
-
 ## Requirements
 
 To make use of this you need to have Visual Studio Code installed on your system. You can download it from [here](https://code.visualstudio.com/).
@@ -31,10 +30,12 @@ Open a file with the .txt or .recap extension.
 The extension should automatically apply the syntax highlighting based on the file extension.
 Supported File Extensions
 `.txt`
-`.recap`
+`.recap` (which is just a text file with a different extension)
 
 Best is to keep your recap files in a separate folder and open the folder in VS Code. Open VS Code and select File > Open Folder... and select the folder with your recap files.
 This way next time you open VS Code, it will remember the folder and you can start working on your recap files right away. (Unless you use VS Code for other projects as well, then you might want to use the File > Open Recent... menu instead.)
+
+To change the look of the highlighting you can choose a different theme in VS Code. Go to File > Preferences > Color Theme... and select a theme. You can also install additional themes from the VS Code Marketplace. Check what styling suits you best.
 
 ## Known Issues
 
@@ -42,7 +43,10 @@ This way next time you open VS Code, it will remember the folder and you can sta
 * VSCode complains about extra whitespaces, which should not really be a big issue for recap files since its not a programming language.
 * Clauses notation like `1. )` tirgger the unclosed bracket to be bright red.
 
+## Roadmap
+
+* Add custom colors settings.
+
 ## Contributing
 
 Feel free to open issues, discussions or pull requests if you have suggestions for improvement.
-

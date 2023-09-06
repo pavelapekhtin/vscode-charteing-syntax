@@ -2,9 +2,9 @@ from typing import Dict, List, Tuple
 
 import toml
 
+from filepaths import PATH_TOML_FILE
 from scripts.cli.cli_functions import console
 from scripts.file_loaders import TomlDict, load_match_cases
-from scripts.lang_file_updater import PATH_TOML_FILE
 
 
 def find_list_duplicates(kwd_list: List[str]) -> List[Tuple[str, int]]:

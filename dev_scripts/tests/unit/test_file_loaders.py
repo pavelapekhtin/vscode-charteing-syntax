@@ -4,8 +4,8 @@ from unittest.mock import mock_open, patch
 import pytest
 import toml
 
+from filepaths import PATH_LANG_FILE, PATH_TOML_FILE
 from scripts.file_loaders import load_lang_json, load_match_cases
-from scripts.lang_file_updater import PATH_LANG_FILE, PATH_TOML_FILE
 
 
 @pytest.mark.acceptance

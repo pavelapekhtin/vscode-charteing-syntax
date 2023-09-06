@@ -2,7 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.3](https://github.com/pavelapekhtin/vscode-charteing-syntax/compare/v0.2.1...v0.2.3) (2023-09-06)
+
+
+### Features
+
+* **dev:** run houskeeping from main.py ([d6f4959](https://github.com/pavelapekhtin/vscode-charteing-syntax/commit/d6f49596820b9b848c4c9ac80bcee29417608ed5))
+
 ### [0.2.2](https://github.com/pavelapekhtin/vscode-charteing-syntax/compare/v0.2.1...v0.2.2) (2023-09-06)
+
+
+### Features
+
+* **dev:** run houskeeping from main.py ([d6f4959](https://github.com/pavelapekhtin/vscode-charteing-syntax/commit/d6f49596820b9b848c4c9ac80bcee29417608ed5))
 
 ### [0.2.1](https://github.com/pavelapekhtin/vscode-charteing-syntax/compare/v0.2.0...v0.2.1) (2023-09-06)
 
