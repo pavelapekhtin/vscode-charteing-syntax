@@ -39,7 +39,10 @@ class LangJsonSchema(BaseModel):
     patterns: List[Pattern]
 
 
-def load_match_cases(path: str) -> dict[str, Any]:
+TomlDict = Dict[str, Dict[str, List[str]]]
+
+
+def load_match_cases(path: str) -> TomlDict:
     try:
         with open(path, "r") as f:
             toml_file = toml.load(f)

@@ -1,6 +1,4 @@
-from typing import Any
-
-fixture = Any
+from tests.conftest import fixture
 
 
 def test_pattern_matcher(lang_file_updater_inst_e2e: fixture) -> None:
