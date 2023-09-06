@@ -2,10 +2,10 @@ name: Test and Publish Extension
 
 on:
   push:
-    # branches:
-    #   - main  
-    # tags:
-    #   - 'v[0-9]+.[0-9]+.[0-9]+'
+    branches:
+      - main  
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
 
 jobs:
   test:
@@ -34,24 +34,24 @@ jobs:
         cd dev_scripts
         poetry run pytest -k acceptance
 
-  # build:
-  #   needs: test
-  #   runs-on: ubuntu-latest
+  build:
+    needs: test
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #   - name: Checkout code
-  #     uses: actions/checkout@v3
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-  #   - name: Setup Node.js
-  #     uses: actions/setup-node@v3
-  #     with:
-  #       node-version: '18'
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
 
-  #   - name: Install Dependencies
-  #     run: npm install
+    - name: Install Dependencies
+      run: npm install
 
-  #   - name: Package and Publish
-  #     run: |
-  #       npm install -g vsce
-  #       vsce package
-  #       vsce publish -p ${{ secrets.VS_MARKETPLACE_TOKEN }}
+    - name: Package and Publish
+      run: |
+        npm install -g vsce
+        vsce package
+        vsce publish -p ${{ secrets.VS_MARKETPLACE_TOKEN }}
