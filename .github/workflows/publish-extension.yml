@@ -26,7 +26,8 @@ jobs:
     - name: Install Dependencies
       run: |
         cd dev_scripts
-        poetry install --no-cache
+        poetry config virtualenvs.create false
+        poetry install 
 
     - name: Run Acceptance Tests
       run: |
