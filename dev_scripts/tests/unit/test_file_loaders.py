@@ -1,11 +1,29 @@
 import json
 from unittest.mock import mock_open, patch
 
+import pytest
 import toml
 
 from scripts.file_loaders import load_lang_json, load_match_cases
+from scripts.lang_file_updater import PATH_LANG_FILE, PATH_TOML_FILE
 
 
+def test_toml_structure_e2e():
+    try:
+        load_match_cases(PATH_TOML_FILE)
+    except Exception as e:
+        pytest.fail(f"Invalid structure of {PATH_TOML_FILE} file: {e}")
+
+
+@pytest.mark.acceptance
+def test_lang_json_structure_e2e():
+    try:
+        load_lang_json(PATH_LANG_FILE)
+    except Exception as e:
+        pytest.fail(f"Invalid structure of {PATH_LANG_FILE} file: {e}")
+
+
+@pytest.mark.unit
 def test_validate_match_cases_toml():
     mock_toml_data = {
         "numeric": {"cases": ["a", "b"]},
@@ -23,6 +41,7 @@ def test_validate_match_cases_toml():
             load_match_cases("fake_path")
 
 
+@pytest.mark.unit
 def test_validate_lang_json():
     mock_lang_json = {
         "name": "Recap",
