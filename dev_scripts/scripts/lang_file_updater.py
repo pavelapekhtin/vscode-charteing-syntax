@@ -2,12 +2,10 @@ import json
 from dataclasses import dataclass, field
 from typing import Any
 
+from filepaths import PATH_LANG_FILE, PATH_LANG_FILE_TEMPLATE, PATH_TOML_FILE
 from scripts.cli.cli_functions import console
 from scripts.file_loaders import load_lang_json, load_match_cases
 
-PATH_LANG_FILE_TEMPLATE = "./data/language_file_template.json"
-PATH_TOML_FILE = "../matchCases.toml"
-PATH_LANG_FILE = "../syntaxes/recap.tmLanguage.json"
 TOML_JSON_MAPPING = {
     "numeric": "constant.numeric",
     "legal": "string.quoted",
@@ -29,6 +27,15 @@ class LangFileUpdater:
         self.kwd_toml: dict[str, Any] = load_match_cases(self.path_kwd_toml)
         self.lang_json_template: dict[str, Any] = load_lang_json(
             self.path_lang_json_template
+        )
+        console.print(
+            f"[green]✔ [/green][yellow]'{self.path_kwd_toml}'[/yellow][green] toml stucture ok."
+        )
+        console.print(
+            f"[green]✔ [/green][yellow]'{self.path_lang_json_template}'[/yellow][green] json stucture ok."
+        )
+        console.print(
+            f"[green]✔ [/green][yellow]'{self.path_lang_json}'[/yellow][green] json stucture ok."
         )
 
     def update_language_file(self) -> None:

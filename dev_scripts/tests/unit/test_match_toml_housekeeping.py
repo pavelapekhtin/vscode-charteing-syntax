@@ -2,8 +2,8 @@ from typing import Any
 
 import pytest
 
+from filepaths import PATH_TOML_FILE
 from scripts.file_loaders import load_match_cases
-from scripts.lang_file_updater import PATH_TOML_FILE
 from scripts.match_toml_housekeeping import (
     combine_match_cases,
     find_and_report_duplicates_across_lists,

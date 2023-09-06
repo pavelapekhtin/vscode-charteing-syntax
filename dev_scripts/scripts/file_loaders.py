@@ -4,8 +4,6 @@ from typing import Any, Dict, List
 import toml
 from pydantic import BaseModel
 
-from scripts.cli.cli_functions import console
-
 
 class MatchCasesFile(BaseModel):
     cases: List[str]
@@ -47,9 +45,6 @@ def load_match_cases(path: str) -> TomlDict:
         with open(path, "r") as f:
             toml_file = toml.load(f)
         TomlKeywords.model_validate(toml_file)
-        console.print(
-            f"[green]✔ [/green][yellow]'{path}'[/yellow][green] toml stucture ok."
-        )
         return toml_file
     except Exception as e:
         raise ValueError(f"Invalid structure of {path} file: {e}")
@@ -60,9 +55,6 @@ def load_lang_json(path: str) -> dict[str, Any]:
         with open(path, "r") as f:
             lang_json = json.load(f)
         LangJsonSchema.model_validate(lang_json)
-        console.print(
-            f"[green]✔ [/green][yellow]'{path}'[/yellow][green] json stucture ok."
-        )
         return lang_json
     except Exception as e:
         raise ValueError(f"Invalid structure of {path} file: {e}")
