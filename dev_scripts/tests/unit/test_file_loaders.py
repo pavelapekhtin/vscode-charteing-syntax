@@ -8,6 +8,7 @@ from scripts.file_loaders import load_lang_json, load_match_cases
 from scripts.lang_file_updater import PATH_LANG_FILE, PATH_TOML_FILE
 
 
+@pytest.mark.acceptance
 def test_toml_structure_e2e():
     try:
         load_match_cases(PATH_TOML_FILE)
