@@ -26,12 +26,12 @@ jobs:
     - name: Install Dependencies
       run: |
         cd dev_scripts
-        poetry install
+        poetry install --no-root
 
     - name: Run Acceptance Tests
       run: |
         cd dev_scripts
-        poetry run pytest -m acceptance
+        poetry run pytest -k acceptance
 
   # build:
   #   needs: test
