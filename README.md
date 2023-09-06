@@ -29,9 +29,9 @@ Install it from within VS Code by searching for "Chartering Syntax" in the Exten
 
 Open a file with the .txt or .recap extension.
 The extension should automatically apply the syntax highlighting based on the file extension.
-Supported File Extensions
+Supported File Extensions are:
 `.txt`
-`.recap`
+`.recap` (which is just a text file with a different extension)
 
 Best is to keep your recap files in a separate folder and open the folder in VS Code. Open VS Code and select File > Open Folder... and select the folder with your recap files.
 This way next time you open VS Code, it will remember the folder and you can start working on your recap files right away. (Unless you use VS Code for other projects as well, then you might want to use the File > Open Recent... menu instead.)
@@ -44,5 +44,8 @@ This way next time you open VS Code, it will remember the folder and you can sta
 
 ## Contributing
 
-Feel free to open issues, discussions or pull requests if you have suggestions for improvement.
+You can propose new keywords to highlight or any other improvements:
 
+* In the repository discussing section [here](https://github.com/pavelapekhtin/vscode-chartering-syntax/discussions)
+* By creating an issue [here](https://github.com/pavelapekhtin/vscode-chartering-syntax/issues).
+* At the extension's comment section on the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=pavelapekhtin.vscode-chartering-syntax).
