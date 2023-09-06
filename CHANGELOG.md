@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.2.1](https://github.com/pavelapekhtin/vscode-charteing-syntax/compare/v0.2.0...v0.2.1) (2023-09-06)
 
+### Features
+
+* added python scripts for housekeeping and testing file sturcture before publishing.
+* added github action to check file structure before publishing.
+
 ### [0.1.3](https://github.com/pavelapekhtin/vscode-charteing-syntax/compare/v0.1.2...v0.1.3) (2023-09-05)
 
 
