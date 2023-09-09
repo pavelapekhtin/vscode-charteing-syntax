@@ -39,9 +39,18 @@
     "url": "https://github.com/pavelapekhtin/vscode-charteing-syntax"
   },
   "devDependencies": {
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "standard-version": "^9.5.0"
   },
   "scripts": {
-    "release": "standard-version"
+    "release": "standard-version",
+    "commit": "cz"
+
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
