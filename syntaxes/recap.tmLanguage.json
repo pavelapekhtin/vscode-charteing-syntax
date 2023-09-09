@@ -13,7 +13,7 @@
     },
     {
       "name": "string.quoted",
-      "match": "(?i)\\b(\"[^\"]*\"|acceptance|amendment|amendments|arbitrage|arbitration|bid|bill|bill of lading|bill of lading(s)|bills of lading|bor|bs/l|c/p|charter party|clause|cls|compliance|cp|extra insurance|ga|gafta|general average|gtee|guarantee|incoterms|insurance|insured|iso|itf|l.o.i|law|letter|letter of indemnity|logical alterations|logically amended|logicaly amended|loi|main terms|mainterms|marpol|p&i|pandi|piracy|pro-forma|rain letter|recap|regulations|rules|settle|settled|settlement|subs|survey|tct|time charter|time charter trip|vetting|war risk|warrant)\\b",
+      "match": "(?i)\\b(\"[^\"]*\"|acceptance|amendment|amendments|arbitrage|arbitration|bid|bill|bill of lading|bill of lading(s)|bills of lading|bor|bs/l|c/p|charter party|clause|cls|compliance|cp|extra insurance|ga|gafta|general average|gtee|guarantee|incoterms|insurance|insured|iso|itf|l.o.i|law|letter|letter of indemnity|logical alterations|logically amended|logicaly amended|loi|main terms|mainterms|marpol|p&i|pandi|piracy|pro-forma|rain letter|recap|regulations|rules|settle|settled|settlement|subs|survey|t/c|t/c t|tc|tct|time charter|time charter trip|vetting|war risk|warrant)\\b",
       "captures": {
         "0": {
           "name": "string.quoted"
@@ -22,7 +22,7 @@
     },
     {
       "name": "variable.parameter",
-      "match": "(?i)\\b($|adcom|adcomm|addcom|address comm|address commission|c/v/e|cancelling|charges|chopt|cnacellation|comission|commission|cost|costs|cve|damage|damages|delivery|dely|dem|demurrage|desp|despatch|dhd|dollars|dues|duration|eur|euro|expense|expenses|f.i.o|fees|filo|fio|fios|fiost|fiot|freight|frt|half despatch|ilohc|in chopt|inchopt|l/s/d|laycan|layday|laydays|liberty|lifo|lilo|liner in|liner out|lsd|lsdw|lumpsum|mol|molchopt|molo|molochopt|moloo|nok|non reversible|non-rev|non-reversible|oap|payable|payment|pcbm|pdpr|pdpr/hd|pmt|premium|prices|rdly|re-delivery|redel|redelivery|redly|responsible|reversible|reverting|spout|stem|taxes|trimmed|usd|voyage|without gtee|without guarantee|wog)\\b",
+      "match": "(?i)\\b($|adcom|adcomm|addcom|address comm|address commission|c/v/e|cancelling|charges|chopt|cnacellation|comission|commission|cost|costs|cve|damage|damages|delivery|dely|dem|demurrage|desp|despatch|dhd|dollars|dues|duration|eur|euro|expense|expenses|f.i.o|fees|filo|fio|fios|fiost|fiot|freight|frt|half despatch|hire|ilohc|in chopt|inchopt|l/s/d|laycan|layday|laydays|liberty|lifo|lilo|liner in|liner out|lsd|lsdw|lumpsum|mol|molchopt|molo|molochopt|moloo|nok|non reversible|non-rev|non-reversible|not|oap|payable|payment|pcbm|pdpr|pdpr/hd|pmt|premium|prices|rdly|re-delivery|redel|redelivery|redly|responsible|reversible|reverting|spout|stem|taxes|trimmed|usd|voyage|without gtee|without guarantee|wog)\\b",
       "captures": {
         "0": {
           "name": "support.parameter"
@@ -31,7 +31,7 @@
     },
     {
       "name": "variable.other.readwrite",
-      "match": "(?i)\\b(1gsb|1sb|2sb|B/L|BL|BSL|Bs/L|aa|aaaa|about|abt|afsps|agent|agents|always afloat|always aflt|anchorage|anchorages|aps|atdnshinc|baltic questionnaire|berth|berths|bimco|bq|bq88|bq99|brob|bunker|bunkering|bunkers|cargo|cargoes|cbm|chabe|crane|cranes|crew|days|disch|discharge|discharging|dischport|disport|dlosp|dlsop|dma|dop|dport|draft|eiu|eta|etc|etd|ets|fhex|fshex|fuel|gear|gears|grab|grabs|gsb|hatch|hatchcovers|hatches|hfo|hold|holds|holiday|holiday calendar|holidays|hsfo|ifo|laytime|load|loading|loadport|loadready|lport|lsmgo|max|mdo|mgo|min|min/max|minimum|mt|mts|naabsa|nor|not to count|notice|notices|pct|port|ports|pwwd|range|restrics|restrictions|sb|shex|shifting|shiftings|sshex|sshinc|stowage|stowage plan|time|to count|tons|tt|ulfo|ulsfo|uu|vessel|vessels|vlfo|vlsfo|vsl|vslfo|weather working day|weather working days|weather working hours|wwd|wwhrs)\\b",
+      "match": "(?i)\\b(1gsb|1sb|2sb|B/L|BL|BSL|Bs/L|aa|aaaa|about|abt|afsps|agent|agents|always afloat|always aflt|anchorage|anchorages|aps|atdnshinc|baltic questionnaire|berth|berths|bimco|bq|bq88|bq99|brob|bunker|bunkering|bunkers|cargo|cargoes|cbm|chabe|crane|cranes|crew|days|disch|discharge|discharging|dischport|disport|dlosp|dlsop|dma|dop|dport|draft|eiu|eta|etc|etd|ets|fhex|fshex|fuel|gear|gears|grab|grabs|gsb|hatch|hatchcovers|hatches|hfo|hold|holds|holiday|holiday calendar|holidays|hsfo|ifo|laytime|load|loading|loadport|loadready|lport|lsmgo|max|mdo|mgo|min|min/max|minimum|mt|mts|naabsa|nor|not to count|notice|notices|pct|port|ports|pwwd|range|restrics|restrictions|sb|shex|shifting|shiftings|sshex|sshinc|stowage|stowage plan|time|to count|tons|tt|ulfo|ulsfo|uu|vessel|vessels|vlfo|vlsfo|vsl|vslfo|vsls|weather working day|weather working days|weather working hours|wwd|wwhrs)\\b",
       "captures": {
         "0": {
           "name": "variable.other.readwrite"
@@ -49,7 +49,7 @@
     },
     {
       "name": "entity.name.type.class",
-      "match": "(?i)\\b(accept|agreed|always|amended|as per|attached|compliant|confirm|damaged|does not|has the right|have the right|limits|must|not to be|oo|option|otherwise|owners option|ows option|reject|sub|subject|suitable|tbc|tbn|to be|to be paid|validity|will be)\\b",
+      "match": "(?i)\\b(accept|agreed|allowed|always|amended|as per|attached|authorise|authorize|available|compliant|confirm|damaged|does not|has the right|have the right|in case|in the case|in the event|limits|must|not to be|oo|option|otherwise|owners option|ows option|reject|sub|subject|suitable|tbc|tbn|to be|to be paid|validity|via|will be)\\b",
       "captures": {
         "0": {
           "name": "entity.name.type.class"
