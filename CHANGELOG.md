@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.5](https://github.com/pavelapekhtin/vscode-charteing-syntax/compare/v0.2.4...v0.2.5) (2023-09-09)
+
+
+### Features
+
+* **keywords:** added more keywords ([05516d2](https://github.com/pavelapekhtin/vscode-charteing-syntax/commit/05516d2cb3d1c077b3fe083ee275ec0adaf429c2))
+
 ### [0.2.4](https://github.com/pavelapekhtin/vscode-charteing-syntax/compare/v0.2.3...v0.2.4) (2023-09-09)
 
 

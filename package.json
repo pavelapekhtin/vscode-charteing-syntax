@@ -3,7 +3,7 @@
   "displayName": "Chartering Syntax",
   "description": "Highlighting important keywors in dry cargo fixutre recaps",
   "icon": "docs/mktplace_icon.png",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "publisher": "pavelapekhtin",
   "engines": {
     "vscode": "^1.81.0"
